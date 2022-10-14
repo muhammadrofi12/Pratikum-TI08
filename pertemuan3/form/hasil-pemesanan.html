@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title> Input Hasil Pemesanan Barang </title>
+</head>
+
+<body style="font-family: sans-serif; background-color: #D3D3D3;">
+    <center>
+
+        <nav>
+            <fieldset style="margin-left: 20%; margin-right:20%; margin-top:5%; background-color: white; ">
+                <table align="center" width="100%">
+    
+                    <tr> 
+                        <td> <a style="text-decoration: none; color: black;" href=""> Home &nbsp; &nbsp; &nbsp;<b> | </b></a> </td> 
+                        <td> <a style="text-decoration: none; color: black;" href=""> Register &nbsp; &nbsp; &nbsp;<b> | </b></a> </td>
+                        <td> <a style="text-decoration: none; color: black;" href=""> Policy &nbsp; &nbsp; &nbsp;<b> | </b></a> </td>
+                        <td> <a style="text-decoration: none; color: black;" href=""> About </a> </td>
+                    </tr>
+    
+                </table>
+            </fieldset>
+        </nav>
+
+        <br>
+        <br>
+    
+        <div style="margin-left:10%; margin-right:10%; ">
+            <form action="">
+                <table width="65%" cellpadding="6px">
+                    <tr>
+                        <td > <label for=""> Title Here </label> </td>
+                        <td> : </td>
+                        <td > Galaxy S22 Ultra 5G 12/256GB </td>
+                    </tr>
+
+                    <tr>
+                        <td> 
+                            <label for="img"> Upload Picture </label>
+                        </td>
+                        <td> : </td>
+                        <td> <img style="width:100px; height: 100px;" src="images/samsung.jpg" alt=""> </td>
+                    </tr>
+
+                    <tr>
+                        <td> 
+                            <label for=""> Description </label> <br>
+                        </td>
+                        <td> : </td>
+                        <td> <br> Year : 2022 <br> Model : <br> Condition : Good<br></td>
+                    </tr>
+    
+                    <tr>
+                        <td> <label for=""> Total Amount </label> </td>
+                        <td> : </td>
+                        <td> $1.170 </td>
+                    </tr>
+                    <tr>
+                        <td> <label for=""> Pay To </label> </td>
+                        <td> : </td>
+                        <td> 123-456-789-01 </td>
+                    </tr>
+    
+                    <tr>
+                        <td> <label for=""> Payment Type </label> </td>
+                        <td> : </td>
+                        <td>
+                            <select name="bank" style="width: 100px;">
+                                <option  value=""> BRI </option>
+                                <option  value=""> MANDIRI </option>
+                                <option  value=""> BCA </option>
+                                <option  value=""> BNI </option>
+                                <option  value=""> CIMB Niaga </option>
+                                <option  value=""> MNC BANK </option>
+                                <option  value=""> Visa Debit </option>
+                              </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td> <label for="accountholder"> Account Holder </label> </td>
+                        <td> : </td>
+                        <td>
+                            <input required style="width: 400px;" type="text" name="accountholder" id="accountholder">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td> <label for="accountno"> Account No </label> </td>
+                        <td> : </td>
+                        <td>
+                            <input required style="width: 400px;" type="number" name="accountno" id="accountno">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <input type='checkbox' name='mobilephone' value='mobilephone' id="mobilephone"/> 
+                            <label for="mobilephone"> Send to Mobile Phone</label> <br>
+
+                            <input type='checkbox' name='sendemail' value='sendemail' id="sendemail"/> 
+                            <label for="sendemail"> Send to Email </label> <br>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td> <label for="mobilephone"> Send to Mobile Phone </label> </td>
+                        <td> : </td>
+                        <td> <input style="width: 400px;" type="number" name="mobilephone" id="mobilephone"> </td>
+                    </tr>
+
+                    <tr>
+                        <td> <label for="sendemail"> Send to Email </label> </td>
+                        <td> : </td>
+                        <td> <input style="width: 400px;" type="email" name="sendemail" id="sendemail"> </td>
+                    </tr>
+                    
+    
+                </table>
+
+                <br>
+                <br>
+
+                <div>
+                    <button style="background-color:green; color:white; padding:10px; width: 20%;" 
+                    name="submit"> Pay using QuidLink </button>
+                  </div>
+
+            </form>
+        </div>
+
+    </center>
+
+
+    
+</body>
+</html>

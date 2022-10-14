@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title> Pesanan Barang </title>
+</head>
+
+<body style="font-family: sans-serif; background-color: #D3D3D3;">
+    <center>
+
+        <nav>
+            <fieldset style="margin-left: 10%; margin-right:10%; margin-top:5%; background-color: white; ">
+                <table align="center" width="100%">
+    
+                    <tr> 
+                        <td> <a style="text-decoration: none; color: black;" href=""> Home &nbsp; &nbsp; <b> | </b></a> </td> 
+                        <td> <a style="text-decoration: none; color: black;" href=""> Generate Link &nbsp; &nbsp; <b> | </b></a> </td>
+                        <td> <a style="text-decoration: none; color: black;" href=""> Transaction History &nbsp; &nbsp; <b> | </b></a> </td>
+                        <td> <a style="text-decoration: none; color: black;" href=""> Policy &nbsp; &nbsp; <b> | </b></a> </td>
+                        <td> <a style="text-decoration: none; color: black;" href=""> Logout </a> </td>
+                    </tr>
+    
+                </table>
+            </fieldset>
+        </nav>
+
+        <br>
+        <br>
+    
+        <div style="margin-left:10%; margin-right:10%; ">
+            <form action="hasil-pemesanan.html">
+                <table width="65%" cellpadding="6px" >
+                    <tr>
+                        <td > <label for="title"> Title Here </label> </td>
+                        <td> : </td>
+                        <td > <input required style="width: 400px;" type="text" name="title" id="title"> </td>
+                    </tr>
+
+                    <tr>
+                        <td> 
+                            <label for="img"> Upload Picture </label>
+                        </td>
+                        <td> : </td>
+                        <td> <input required type="file" id="img" name="img" accept="image/*"> </td>
+                    </tr>
+
+                    <tr>
+                        <td> 
+                            <label for="description"> Description </label> <br>
+                        </td>
+                        <td> : </td>
+                        <td> 
+                            <textarea style="width: 400px;" name="description" id="description" rows="4" placeholder="Year,Model,Condition"></textarea>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td> <label for="accountnumber"> Account Number </label> </td>
+                        <td> : </td>
+                        <td> <input required style="width: 400px;" type="number" name="accountnumber" id="accountnumber"> </td>
+                    </tr>
+                    <tr>
+                        <td> <label for="bank"> Bank </label> </td>
+                        <td> : </td>
+                        <td>
+                            <select name="bank" style="width: 100px;">
+                                <option  value=""> BRI </option>
+                                <option  value=""> MANDIRI </option>
+                                <option  value=""> BCA </option>
+                                <option  value=""> BNI </option>
+                                <option  value=""> CIMB Niaga </option>
+                                <option  value=""> MNC BANK </option>
+                                <option  value=""> Visa Debit </option>
+                              </select>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td> <label for="accountholder"> Account Holder </label> </td>
+                        <td> : </td>
+                        <td> <input required style="width: 400px;" type="text" name="accountholder" id="accountholder"> </td>
+                    </tr>
+
+                    <tr>
+                        <td> <label for="transaction"> Transaction </label> </td>
+                        <td> : </td>
+                        <td>
+                            <select name="transaction" style="width: 100px;">
+                                <option  value="1"> 1 </option>
+                                <option  value="2"> 2 </option>
+                                <option  value="3"> 3 </option>
+                              </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <input type='checkbox' name='mobilephone' value='mobilephone' id="mobilephone"/> 
+                            <label for="mobilephone"> Send to Mobile Phone</label> <br>
+
+                            <input type='checkbox' name='sendemail' value='sendemail' id="sendemail"/> 
+                            <label for="sendemail"> Send to Email </label> <br>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td> <label for="mobilephone"> Send to Mobile Phone </label> </td>
+                        <td> : </td>
+                        <td> <input style="width: 400px;" type="number" name="mobilephone" id="mobilephone"> </td>
+                    </tr>
+
+                    <tr>
+                        <td> <label for="sendemail"> Send to Email </label> </td>
+                        <td> : </td>
+                        <td> <input style="width: 400px;" type="email" name="sendemail" id="sendemail"> </td>
+                    </tr>
+                    
+    
+                </table>
+
+                <br>
+                <br>
+
+                <div>
+                    <button style="background-color:green; color:white; padding:10px; width: 20%;" 
+                    name="submit"> Generate Nabr Link</button>
+                  </div>
+
+            </form>
+        </div>
+
+    </center>
+
+
+    
+</body>
+</html>
