@@ -1,0 +1,63 @@
+#header{
+    background-color: #FFC44F;
+    padding: 1%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-color:antiquewhite;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#header h1{
+    color: blue;
+    text-align: center;
+}
+
+#header blockquote{
+    background-color: #FFE51E;
+    border: 2px dotted #000000;
+    text-align: center;
+    font-weight: bold;
+    padding: 15px 10px;
+}
+
+.menu{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: fit-content;
+}
+
+.menu ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.menu li{
+    margin-left: 20px;
+}
+
+.gambar{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+
+.gambar .img1{
+    width: 200px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.gambar .img2{
+    width: 215px;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+.besar{
+    font-size:50px;
+    color: blue;
+}
