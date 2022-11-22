@@ -1,0 +1,15 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* Flex Item */
+.container{
+    display: flex;
+}
+
+img{
+    height: 11vw;
+    border: 1px solid;
+    flex-grow: 1;
+}

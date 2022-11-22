@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    height: 5rem;
+}
+
+/* Flex Container */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aquamarine;
+    padding: 0.5rem;
+}
+
+/* Flex Container */
+header nav ul{
+ display: flex;
+ list-style: none;
+}
+
+header nav ul li{
+    padding: 0 0.5rem;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: blue;
+}
