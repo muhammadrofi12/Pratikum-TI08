@@ -1,0 +1,59 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header, footer{
+    background-color: #98d1c7;
+    margin: 10px 20px;
+    height: 15vh;
+    
+}
+
+header h1, footer h1{
+    padding: 20px 0;
+}
+
+/* Flex container */
+.container{
+    display: flex;
+    flex-grow: 1;
+}
+
+aside{
+    background-color: #62b7b6;
+    margin: 10px 20px;
+    width: 30vw;
+}
+
+aside h1{
+    padding: 200px 0;
+}
+
+article{
+    background-color: #fa7a7b;
+    flex-grow: 1;
+    margin: 10px 20px;
+}
+
+article h1{
+    padding: 100px 0;
+}
+
+.gambar{
+    display: flex;
+}
+
+img{
+    width: 20rem;
+    margin: 0 20px;
+}
+
+h1{
+    color: white;
+    text-align: center;
+}
