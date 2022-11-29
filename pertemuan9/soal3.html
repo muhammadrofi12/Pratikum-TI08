@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menghitung Biaya Parkir</title>
+  </head>
+  <body>
+    <h1>Menghitung Biaya Parkir</h1>
+
+    <label for="hour_in">Jam Masuk</label>
+    <input type="number" id="hour_in" />
+
+    <label for="hour_out">Jam Keluar</label>
+    <input type="number" id="hour_out" />
+
+    <button>Hitung</button>
+
+    <p>Durasi : <span id="duration">0</span> Jam</p>
+    <p>Biaya : Rp.<span id="cost">0</span></p>
+
+    <script>
+      let btn = document.getElementsByTagName("button")[0];
+
+      btn.addEventListener("click", function () {
+        let hour_in = document.getElementById("hour_in").value;
+        let hour_out = document.getElementById("hour_out").value;
+        let duration = document.getElementById("duration");
+        let cost = document.getElementById("cost");
+        let interval = hour_out - hour_in;
+
+        duration.innerHTML = interval;
+
+        if (interval <= 2) {
+          cost.innerHTML = 3000;
+        } else {
+          cost.innerHTML = 3000 + (interval - 2) * 1000;
+        }
+      });
+    </script>
+  </body>
+</html>
