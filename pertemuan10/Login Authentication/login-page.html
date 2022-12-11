@@ -5,6 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
+
+    <style>
+      body {
+        background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(97, 186, 255, 1) 0%, rgba(166, 239, 253, 1) 90.1%);
+      }
+
+      form {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 45px;
+        width: 400px;
+        margin: auto;
+        background-color: white;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        border-radius: 10px;
+      }
+
+      label,
+      input {
+        display: block;
+        margin-bottom: 10px;
+        width: 100%;
+      }
+    </style>
   </head>
   <body>
     <!DOCTYPE html>
@@ -13,28 +39,30 @@
         <title>Halaman Login</title>
       </head>
       <body>
-        <h1>Login</h1>
+        <form onsubmit="return false">
+          <h1>Login</h1>
 
-        <label for="username">Username:</label>
+          <label for="username">Username:</label>
 
-        <br />
+          <br />
 
-        <input type="text" id="username" name="username" placeholder="Username" />
+          <input type="text" id="username" name="username" placeholder="Username" />
 
-        <br />
+          <br />
 
-        <label for="password">Password:</label>
+          <label for="password">Password:</label>
 
-        <br />
+          <br />
 
-        <input type="password" id="password" name="password" placeholder="Password" />
+          <input type="password" id="password" name="password" placeholder="Password" />
 
-        <br />
-        <br />
+          <br />
+          <br />
 
-        <button onclick="validateLogin()">Login</button>
+          <button onclick="validateLogin()">Login</button>
 
-        <p id="error"></p>
+          <p id="error"></p>
+        </form>
 
         <script>
           function validateLogin() {
@@ -43,11 +71,11 @@
             let error = document.getElementById("error");
 
             if (username == "ahmad2017" && password == "integrity") {
-              window.alert('Login Sukses!!');
-              location.replace('account.html');
+              window.alert("Login Sukses!!");
+              location.replace("account.html");
             } else {
-              error.innerHTML = 'Username atau password salah!';
-              error.style = "color : red"
+              error.innerHTML = "Username atau password salah!";
+              error.style = "color : red";
             }
           }
         </script>

@@ -6,43 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form Validation</title>
   </head>
-  <body>
-    <h1>Form Validation</h1>
+  <body style="width: 700px; margin: auto">
+    <fieldset style="margin-top: 50px">
+      <legend>Form Validation</legend>
+      <form onsubmit="return false" id="myForm">
+        <table>
+          <tr>
+            <td><label for="name">Nama Pelanggan</label></td>
+            <td>: <input type="text" id="name" placeholder="Masukkan Nama Anda" maxlength="30" required /><span id="errorName"></span></td>
+          </tr>
 
-    <form onsubmit="return false" id="myForm">
-      <label for="name">Nama Pelanggan : </label>
-      <input type="text" id="name" placeholder="Masukkan Nama Anda" maxlength="30" required /><span id="errorName"></span>
+          <tr>
+            <td><label for="email">Email</label></td>
+            <td>: <input type="email" id="email" placeholder="Masukkan Email Anda" required /><span id="errorEmail"></span></td>
+          </tr>
 
-      <br />
-      <br />
+          <tr>
+            <td><label for="jam">Jam Keberangkatan</label></td>
+            <td>: <input type="time" id="jam" required /><span id="errorJam"></span></td>
+          </tr>
 
-      <label for="email">Email : </label>
-      <input type="email" id="email" placeholder="Masukkan Email Anda" required /><span id="errorEmail"></span>
+          <tr>
+            <td><label for="tujuan">Tujuan Keberangkatan</label></td>
+            <td>: <input type="text" id="tujuan" placeholder="Tujuan" required /><span id="errorTujuan"></span></td>
+          </tr>
 
-      <br />
-      <br />
+          <tr>
+            <td><label for="tiket">Jumlah Tiket</label></td>
+            <td>: <input type="number" id="tiket" /><span id="errorTiket"></span></td>
+          </tr>
+        </table>
 
-      <label for="jam">Jam Keberangkatan : </label>
-      <input type="time" id="jam" required /><span id="errorJam"></span>
+        <br />
+        <br />
 
-      <br />
-      <br />
-
-      <label for="tujuan">Tujuan Keberangkatan : </label>
-      <input type="text" id="tujuan" placeholder="Tujuan" required /><span id="errorTujuan"></span>
-
-      <br />
-      <br />
-
-      <label for="tiket">Jumlah Tiket : </label>
-      <input type="number" id="tiket" /><span id="errorTiket"></span>
-
-      <br />
-      <br />
-
-      <input type="button" onclick="formValidation()" value="Submit" />
-      <input type="button" onclick="reload()" value="Isi ulang" />
-    </form>
+        <input type="button" onclick="formValidation()" value="Submit" />
+        <input type="button" onclick="reload()" value="Isi ulang" />
+      </form>
+    </fieldset>
 
     <br />
     <br />
@@ -72,6 +73,12 @@
           document.getElementById("hasilJam").innerHTML = "Jam Keberangkatan : " + jam;
           document.getElementById("hasilTujuan").innerHTML = "Tujuan : " + tujuan;
           document.getElementById("hasilTiket").innerHTML = "Tiket : " + tiket;
+
+          document.getElementById("errorName").innerHTML = " ";
+          document.getElementById("errorEmail").innerHTML = " ";
+          document.getElementById("errorJam").innerHTML = " ";
+          document.getElementById("errorTujuan").innerHTML = " ";
+          document.getElementById("errorTiket").innerHTML = " ";
         }
 
         if (nama.toLowerCase() != "ahmad" || email != "ahmad2017@gmail.com") {
