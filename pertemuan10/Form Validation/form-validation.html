@@ -54,7 +54,7 @@
       <p id="hasilJam" style="font-size: 20px"></p>
       <p id="hasilTujuan" style="font-size: 20px"></p>
       <p id="hasilTiket" style="font-size: 20px"></p>
-      <p id="ket"></p>
+      <p id="ket" style="font-size: 40px;"></p>
     </div>
 
     <script>
@@ -86,11 +86,15 @@
           document.getElementById("errorName").style = "color:red";
           document.getElementById("errorEmail").innerHTML = " DATA TIDAK DITEMUKAN";
           document.getElementById("errorEmail").style = "color:red";
+          document.getElementById("ket").innerHTML = "Data Tidak Ditemukan, Periksa Kembali Data Anda Dengan Benar!!";
+          document.getElementById("ket").style = "color:red"
         }
 
         if (jam != "03:00") {
           document.getElementById("errorJam").innerHTML = " DATA TIDAK DITEMUKAN";
           document.getElementById("errorJam").style = "color:red";
+          document.getElementById("ket").innerHTML = "Data Tidak Ditemukan, Periksa Kembali Data Anda Dengan Benar!!";
+          document.getElementById("ket").style = "color:red"
         }
 
         if (tujuan.toLowerCase() != "bali" || tiket != "4") {
@@ -98,6 +102,8 @@
           document.getElementById("errorTujuan").style = "color:red";
           document.getElementById("errorTiket").innerHTML = " DATA TIDAK DITEMUKAN";
           document.getElementById("errorTiket").style = "color:red";
+          document.getElementById("ket").innerHTML = "Data Tidak Ditemukan, Periksa Kembali Data Anda Dengan Benar!!";
+          document.getElementById("ket").style = "color:red"
         }
       }
 
