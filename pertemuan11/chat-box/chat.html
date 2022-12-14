@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat Box</title>
+
+    <!-- CSS AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+
+    <!-- CSS -->
+    <style>
+      body {
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        border: 1px solid black;
+        border-radius: 15px;
+        position: relative;
+        margin: auto;
+        margin-top: 30px;
+        padding: 0 12px;
+        width: 500px;
+        height: 75vh;
+      }
+
+      #box-chat {
+        height: 70%;
+        overflow-y: scroll;
+      }
+
+      .teman {
+        background-color: #75c7c8;
+        margin: 1%;
+        padding: 3%;
+        border-radius: 20px 40px 60px 80px;
+      }
+
+      h1 {
+        text-align: center;
+      }
+      .chat {
+        width: 100%;
+        height: 120px;
+      }
+
+      .pesan {
+        display: flex;
+        padding: 0 10px;
+        margin-top: 55px;
+      }
+
+      #input-chat {
+        width: 90%;
+      }
+      button {
+        width: 25%;
+      }
+
+      p {
+        background-color: #cbedd5;
+        margin: 1%;
+        padding: 3%;
+        border-radius: 40px 20px 80px 60px;
+        text-align: right;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Group Chat</h1>
+      <hr />
+      <div id="box-chat">
+        <div class="teman">Hallo! Apa kabar? Kapan nih kita kumpul lagi?</div>
+      </div>
+      <form class="pesan" onsubmit="return false">
+        <input type="text" id="input-chat" />
+        <button onclick="kirimChat()"><i class="fa-sharp fa-solid fa-paper-plane"></i> Kirim</button>
+      </form>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script src="chat.js"></script>
+  </body>
+</html>
